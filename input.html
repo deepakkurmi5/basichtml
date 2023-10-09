@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Input types</title>
+    </head>
+    <body>
+
+        <form action="./validtion.php" method="post"
+            enctype="multipart/form-data" accept-charset="UTF-8">
+
+            <label for="username">Username:</label><br><br>
+            <input type="text" name="username" id="username" autofocus /><br><br>
+
+            <label for="password">Password:</label><br><br>
+            <input type="password" name="password" id="password" /><br><br>
+
+            <label for="favcolor">Select your favorite color:</label><br><br>
+            <input type="color" id="favcolor" name="favColor" /><br><br>
+
+            <label for="birthday">Birthday:</label><br><br>
+            <input type="date" name="birthday" max="2022-03-20" /><br><br>
+
+            <label for="birthdaytime">Birthday (date and time):</label><br><br>
+            <input id="birthdaytime" type="datetime-local" name="birthdaytime" /><br><br>
+
+            <label for="email">Enter your email:</label><br><br>
+            <input type="email" name="email" id="email" /><br><br>
+
+            <label for="myfile">Select a file:</label><br><br>
+            <input type="file" id="myfile" name="images" multiple /><br><br>
+
+            <label for="age">Age:</label><br><br>
+            <input type="number" id="age" name="age" min="18" max="30" step="5"
+                value="0" /><br><br>
+
+            <label for="gsearch">Search Google:</label><br><br>
+            <input type="search" id="gsearch" name="gsearch" /><br><br>
+
+            <label for="phone">Enter your phone number:</label><br><br>
+            <input type="tel" id="phone" name="phone" /><br><br>
+
+            <label for="homepage">Add your homepage:</label><br><br>
+            <input type="url" id="homepage" name="url" /><br><br>
+            <input type="submit" value="Submit" />
+
+            <input type="reset" disabled>
+
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+    <body>
+
+        <!-- basic form  -->
+
+        <form autocomplete="off" action="/valid.php"
+            enctype="application/x-www-form-urlencoded"
+            method="post" accept-charset="UTF-8">
+            <fieldset>
+                <legend>Personalia:</legend>
+                <label for="fname">First name: </label><br />
+                <input type="text" id="fname" name="fname" /><br /><br />
+
+                <label for="lname">Last name: </label><br />
+                <input type="text" id="lname" name="lname" /><br /><br />
+
+                <input type="checkbox" name="color1" value="red" id="red" />
+
+                <label for="red">red</label>
+                <input type="checkbox" name="color2" value="green" id="green" />
+                <label for="green">green</label>
+                <input type="checkbox" name="color3" value="puple" id="puple" />
+                <label for="puple">puple</label>
+                <label for="cars">Cars</label>
+
+                <br /><br />
+                <input type="radio" name="fav_language1" value="CSS" id="css" />
+                <label for="css">CSS</label>
+                <input type="radio" name="fav_language2" value="JS" id="js" />
+                <label for="js">Javascript</label>
+                <input type="radio" name="fav_language3" value="HTML" id="HTML" />
+                <label for="HTML">HTML</label><br /><br />
+                <select id="cars" name="car" size="2" multiple>
+                    <option value="Audi">Audi</option>
+                    <option value="Saab" selected>Saab</option>
+                    <option value="Saab">Saab</option>
+                    <option value="Saab">Saab</option>
+                </select><br /><br />
+
+                <textarea name="message" rows="5" cols="50"></textarea><br /><br />
+
+                <input type="range" value="30"><br /><br />
+
+                <p>The datalist element specifies a list of pre-defined options
+                    for an input element.</p>
+                <input list="browser">
+
+                <datalist id="browser">
+                    <option value="Internet Explorer">
+                        <option value="Firefox">
+                            <option value="Chrome">
+                                <option value="Opera">
+                                    <option value="Safari">
+                                    </datalist>
+                                    <input type="submit" />
+                                </fieldset>
+                            </form>
+
+                        </body>
+
+                    </html>
